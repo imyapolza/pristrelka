@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	user-select: none;
+}
+
+html,
+body {
+	font-size: 14px;
+	font-weight: 500;
+	font-family: "Montserrat";
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #fff;
+	background: #151313;
+	line-height: 140%;
+}
+
+body::-webkit-scrollbar {
+	display: none;
+}
+
+input {
+	background: none;
+}
+
+input:focus {
+	outline: none;
+}
+
+a,
+button {
+	cursor: pointer;
+	transition: all 0.2s;
+}
+
+img {
+	display: block;
+}
+
+#root {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+html, body, #root {
+    height: 100%;
+}
+
+.container {
+	max-width: 1560px;
+	padding: 0 20px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.flex-middle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@media(max-width: 568px) {
+    .container {
+        padding: 0 16px;
+    }
+}
